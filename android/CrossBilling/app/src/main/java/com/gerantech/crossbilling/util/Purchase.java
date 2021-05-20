@@ -47,54 +47,21 @@ public class Purchase {
         mSignature = signature;
     }
 
-    public String getItemType() {
-        return mItemType;
-    }
-
-    public String getOrderId() {
-        return mOrderId;
-    }
-
-    public String getPackageName() {
-        return mPackageName;
-    }
-
-    public String getSku() {
-        return mSku;
-    }
-
-    public long getPurchaseTime() {
-        return mPurchaseTime;
-    }
-
-    public int getPurchaseState() {
-        return mPurchaseState;
-    }
-
-    public String getDeveloperPayload() {
-        return mDeveloperPayload;
-    }
-
-    public String getToken() {
-        return mToken;
-    }
-
-    public String getOriginalJson() {
-        return mOriginalJson;
-    }
-
-    public String getSignature() {
-        return mSignature;
-    }
+    public String getItemType() { return mItemType; }
+    public String getOrderId() { return mOrderId; }
+    public String getPackageName() { return mPackageName; }
+    public String getSku() { return mSku; }
+    public long getPurchaseTime() { return mPurchaseTime; }
+    public int getPurchaseState() { return mPurchaseState; }
+    public String getDeveloperPayload() { return mDeveloperPayload; }
+    public String getToken() { return mToken; }
+    public String getOriginalJson() { return mOriginalJson; }
+    public String getSignature() { return mSignature; }
 
     @Override
-    public String toString() {
-        return "PurchaseInfo(type:" + mItemType + "):" + mOriginalJson;
-    }
+    public String toString() { return "PurchaseInfo(type:" + mItemType + "):" + mOriginalJson; }
 
-    public String toJson() {
-        return mOriginalJson;
-    }
+    public String toJson() { return mOriginalJson; }
 
     public String getString() throws JSONException {
         JSONObject json = new JSONObject(mOriginalJson);

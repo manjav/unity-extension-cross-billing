@@ -45,33 +45,14 @@ public class SkuDetails {
         mDescription = o.optString("description");
     }
 
-    public String getSku() {
-        return mSku;
-    }
-
-    public String getType() {
-        return mType;
-    }
-
-    public String getPrice() {
-        return mPrice;
-    }
-
-    public String getTitle() {
-        return mTitle;
-    }
-
-    public String getDescription() {
-        return mDescription;
-    }
+    public String getSku() { return mSku; }
+    public String getType() { return mType; }
+    public String getPrice() { return mPrice; }
+    public String getTitle() { return mTitle; }
+    public String getDescription() { return mDescription; }
 
     @Override
-    public String toString() {
-        return "SkuDetails:" + mJson;
-    }
+    public String toString() { return "SkuDetails:" + mJson; }
 
-    public JSONObject toJson() throws JSONException {
-        JSONObject jsonObj = new JSONObject(mJson);
-        return jsonObj;
-    }
+    public JSONObject toJson() throws JSONException { return new JSONObject(mJson); }
 }
