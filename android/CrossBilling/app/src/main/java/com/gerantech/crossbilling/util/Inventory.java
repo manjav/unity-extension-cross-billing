@@ -13,7 +13,7 @@
  * limitations under the License.
  */
 
-package com.farsitel.bazaariab.util;
+package com.gerantech.crossbilling.util;
 
 import java.util.ArrayList;
 import java.util.HashMap;

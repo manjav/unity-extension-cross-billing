@@ -13,7 +13,7 @@
  * limitations under the License.
  */
 
-package com.farsitel.bazaariab.util;
+package com.gerantech.crossbilling.util;
 
 import org.json.JSONException;
 import org.json.JSONObject;

@@ -13,7 +13,7 @@
  * limitations under the License.
  */
 
-package com.farsitel.bazaariab.util;
+package com.gerantech.crossbilling.util;
 
 /**
  * Represents the result of an in-app billing operation.

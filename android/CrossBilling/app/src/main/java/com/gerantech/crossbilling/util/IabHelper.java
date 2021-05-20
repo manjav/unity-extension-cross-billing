@@ -13,7 +13,7 @@
  * limitations under the License.
  */
 
-package com.farsitel.bazaariab.util;
+package com.gerantech.crossbilling.util;
 
 import android.app.Activity;
 import android.app.PendingIntent;
@@ -21,7 +21,6 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentSender;
-import android.content.IntentSender.SendIntentException;
 import android.content.ServiceConnection;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
