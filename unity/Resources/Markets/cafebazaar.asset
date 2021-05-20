@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcb031b9b4099e44f83271c85a73a63f, type: 3}
+  m_Name: cafebazaar
+  m_EditorClassIdentifier: 
+  publicKey: MIHNMA0GCSqGSIb3DQEBAQUAA4G7ADCBtwKBrwCr1DxbF5Ub4SnksjwVnEu5wmLyzoD7MHtM8rVzDFeZInWLsxefy4j9sm853u7haBEBk83na5wHAYzHHK6oq5nzCpdxzbQUuVfw5x4Ir4zb6cUPbHlHNHgRYMfcEaWWV4ek/kY+PebYsZNAdPpiWH0tx+kTYjRvKUsvrkVvsUfHOYyUJmhZFHwVJohSVL2X6uTqBdlZVPsD0aJtCrbXL2JuzsNvH3q91OcQ6yLV1NsCAwEAAQ==
+  bindURL: ir.cafebazaar.pardakht.InAppBillingService.BIND
+  packageURL: com.farsitel.bazaar
+  manifestPermission: com.farsitel.bazaar.permission.PAY_THROUGH_BAZAAR

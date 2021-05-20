@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcb031b9b4099e44f83271c85a73a63f, type: 3}
+  m_Name: googleplay
+  m_EditorClassIdentifier: 
+  publicKey: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAze4GG0WPUM6rJbF2IIiyE7t/23EbhSKPnw7tTDDK0gyITDjy+ba+mKsoT21nnM55/Lfg+dxSoAv1nnqAFhi1sHlFdWDL9bhMfmQxQgLQ86JEHvW0u2iwu/i+htfSrDJ5WWttqZ7hVe6fwmvmY1opP1/ASGjfwunV0HeThj+STkJlrED2yFkq9coonhkxIMTWI8eX+NIdcsUIkIROtP3il67sQrBrOS20q4oNbUdb82xYrNJyH7DM6UqPO2YgPgpBrJKJlXma0Iue6QuTImMq9Ij7AqWETc+uPjUG1xTY8G6uM2/w6JoJYP+Jfxs2OGI2jy3GoC+04O7m+XngFUAedQIDAQAB
+  bindURL: com.android.vending.billing.InAppBillingService.BIND
+  packageURL: com.android.vending
+  manifestPermission: com.android.vending.BILLING

@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System;
 using UnityEngine.Networking;
 using System.Collections;
@@ -149,7 +149,17 @@ namespace BazaarInAppBilling
                 return;
             }
             instance = this;
+            InitMarketConfigs();
             DontDestroyOnLoad(gameObject);
+        }
+
+        private void InitMarketConfigs()
+        {
+            market = Resources.Load<SelectedMarket>("Markets/SelectedMarket").storName.ToString();
+            MarketConfigs configs = Resources.Load<MarketConfigs>("Markets/"+market);
+            packageURL= configs.packageURL;
+            publicKey= configs.publicKey;
+            bindURL= configs.bindURL;
         }
 
         /// <summary>
