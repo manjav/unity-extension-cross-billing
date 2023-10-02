@@ -298,7 +298,7 @@ namespace BazaarInAppBilling
         /// <param name="successEvent">The function that will be called after successful purchase.
         /// Has a purchase parameter wich you can get purchase details from it and an integer parameter as purchased product index.
         /// This function is like "void OnPurchasedSuccessfully(Purchase purchase, int productIndex){}"</param>
-        public void Purchase(string productId, Action<int, string> errorEvent, Action<Purchase, int> successEvent)
+        public void Purchase(Product product, Action<int, string> errorEvent, Action<Purchase, int> successEvent)
         {
             mPurchaseErrorEvent = errorEvent;
             mPurchaseSuccessEvent = successEvent;
@@ -327,8 +327,40 @@ namespace BazaarInAppBilling
 
             if (pluginUtilsClass != null)
             {
-                bool consumeImmidiate = false;
-                pluginUtilsClass.Call("Purchase", productId, consumeImmidiate, payload);
+                pluginUtilsClass.Call("Purchase", product.productId, product.consumeImmidiatly, payload);
+            }
+        }
+
+        public void PurchaseSub(Product product, Action<int, string> errorEvent, Action<Purchase, int> successEvent)
+        {
+            mPurchaseErrorEvent = errorEvent;
+            mPurchaseSuccessEvent = successEvent;
+            //selectedProductIndex = productIndex;
+
+            //if (!IsProductIndexValid(productIndex, mPurchaseErrorEvent)) return;
+
+            if (!IsBillingServiceInitialized)
+            {
+                InitializeBillingService(mPurchaseErrorEvent, null);
+                return;
+            }
+
+            if (!IsAndroidPlayer(mPurchaseErrorEvent))
+            {
+                //if (editorDummyResponse)
+                //{
+                //    if (mPurchaseSuccessEvent != null)
+                //    {
+                //        mPurchaseSuccessEvent.Invoke(new Purchase("test", products[selectedProductIndex].productId), selectedProductIndex);
+                //        mPurchaseSuccessEvent = null;
+                //    }
+                //}
+                return;
+            }
+
+            if (pluginUtilsClass != null)
+            {
+                pluginUtilsClass.Call("PurchaseSub", product.productId, product.consumeImmidiatly, payload);
             }
         }
 
